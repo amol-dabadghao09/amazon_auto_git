@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>EdgeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/9</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 01 15:47:52 IST 2024</td>
+<td>Started on:</td><td>Thu Jun 27 20:41:17 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>310 seconds (310920 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2510 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,90 +76,145 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNG.verifyAddToCartOptionOnApplication.addToCartFuctionality()'><b>addToCartFuctionality</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@id=&apos;add-to-cart-button&apos;])[2]&quot;}
-  (Session info: MicrosoftEdge=122.0.2365.59)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<td title='testNG.verifyAddToCartOptionOnApplication.openBrowser()'><b>openBrowser</b><br>Test class: testNG.verifyAddToCartOptionOnApplication<br>Parameters: Edge</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.59, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62985}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 960dc18ea301dd20a9995519cdcce3b4
-*** Element info: {Using=xpath, value=(//input[@id=&apos;add-to-cart-button&apos;])[2]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at Pages.SelectedProductPage.clickOnAddToCart(SelectedProductPage.java:41)
-	at testNG.verifyAddToCartOptionOnApplication.addToCartFuctionality(verifyAddToCartOptionOnApplication.java:98)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace685035620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace685035620'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@id=&apos;add-to-cart-button&apos;])[2]&quot;}
-  (Session info: MicrosoftEdge=122.0.2365.59)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1100250691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1100250691'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 122.0.2365.59, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62985}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\amol\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 960dc18ea301dd20a9995519cdcce3b4
-*** Element info: {Using=xpath, value=(//input[@id=&apos;add-to-cart-button&apos;])[2]}
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at Pages.SelectedProductPage.clickOnAddToCart(SelectedProductPage.java:41)
-	at testNG.verifyAddToCartOptionOnApplication.addToCartFuctionality(verifyAddToCartOptionOnApplication.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>33</td>
+<td>2</td>
 <td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -167,45 +222,1412 @@ Session ID: 960dc18ea301dd20a9995519cdcce3b4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNG.verifyCustomerServiceSection.verifyMsgOnCustomerServicePage()'><b>verifyMsgOnCustomerServicePage</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.closeApplication()'><b>closeApplication</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.clearObjects()'><b>clearObjects</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyCustomerServiceSection</td>
 <td></td>
 <td>0</td>
 <td>testNG.verifyCustomerServiceSection@31190526</td></tr>
 <tr>
-<td title='testNG.verifyNewLaunchSectionWithLaptop.verifyAddBothTocartFuctionality()'><b>verifyAddBothTocartFuctionality</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.openBrowser()'><b>openBrowser</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
 <td></td>
-<td>30</td>
+<td>0</td>
 <td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
 <tr>
-<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.verifyCategorySectionInPrimeVideo()'><b>verifyCategorySectionInPrimeVideo</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td title='testNG.verifyAddToCartOptionOnApplication.logOutApplication()'><b>logOutApplication</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
 <td></td>
-<td>15</td>
-<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
-<tr>
-<td title='testNG.verifyCustomerServiceSection.verifyLaguageSelectionMarathi()'><b>verifyLaguageSelectionMarathi</b><br>Test class: testNG.verifyCustomerServiceSection</td>
-<td></td>
-<td>4</td>
-<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
-<tr>
-<td title='testNG.verifyAddToCartOptionOnApplication.buyNowFunctionality()'><b>buyNowFunctionality</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
-<td></td>
-<td>32</td>
+<td>0</td>
 <td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
 <tr>
-<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.primeVideosectionFuctionality()'><b>primeVideosectionFuctionality</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td title='testNG.verifyCustomerServiceSection.closeApplication()'><b>closeApplication</b><br>Test class: testNG.verifyCustomerServiceSection</td>
 <td></td>
-<td>19</td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td></td>
+<td>0</td>
 <td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
 <tr>
-<td title='testNG.verifyNewLaunchSectionWithLaptop.verifyGotoCartbuttonOnRightSideSection()'><b>verifyGotoCartbuttonOnRightSideSection</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.closeApplication()'><b>closeApplication</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
 <td></td>
-<td>19</td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.closeBrowser()'><b>closeBrowser</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td></td>
+<td>0</td>
 <td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
 <tr>
-<td title='testNG.verifyCustomerServiceSection.verifyFindMoreSolutionAndAskQuationfunction()'><b>verifyFindMoreSolutionAndAskQuationfunction</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td title='testNG.verifyAddToCartOptionOnApplication.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
 <td></td>
-<td>12</td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.createPOMObjects()'><b>createPOMObjects</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.openBrowser()'><b>openBrowser</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.closeApplication()'><b>closeApplication</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
 <td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.closeBrowser()'><b>closeBrowser</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.createPOMObjects()'><b>createPOMObjects</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.openBrowser()'><b>openBrowser</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.logOutApplication()'><b>logOutApplication</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyAddToCartOptionOnApplication.createPOMObjects()'><b>createPOMObjects</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyAddToCartOptionOnApplication.clearObjects()'><b>clearObjects</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.logOutApplication()'><b>logOutApplication</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.clearObjects()'><b>clearObjects</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.createPOMObjects()'><b>createPOMObjects</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.clearObjects()'><b>clearObjects</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyAddToCartOptionOnApplication.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyAddToCartOptionOnApplication.logOutApplication()'><b>logOutApplication</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyAddToCartOptionOnApplication.closeBrowser()'><b>closeBrowser</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.openApplication()'><b>openApplication</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.closeApplication()'><b>closeApplication</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.closeBrowser()'><b>closeBrowser</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.verifyGotoCartbuttonOnRightSideSection()'><b>verifyGotoCartbuttonOnRightSideSection</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1695426766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1695426766'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.verifyLaguageSelectionMarathi()'><b>verifyLaguageSelectionMarathi</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace722532624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace722532624'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyAddToCartOptionOnApplication.addToCartFuctionality()'><b>addToCartFuctionality</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace395522546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace395522546'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.verifyFindMoreSolutionAndAskQuationfunction()'><b>verifyFindMoreSolutionAndAskQuationfunction</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1166464215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1166464215'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.primeVideosectionFuctionality()'><b>primeVideosectionFuctionality</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1650505410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1650505410'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
+<tr>
+<td title='testNG.verifyCustomerServiceSection.verifyMsgOnCustomerServicePage()'><b>verifyMsgOnCustomerServicePage</b><br>Test class: testNG.verifyCustomerServiceSection</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1058172487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1058172487'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyCustomerServiceSection@31190526</td></tr>
+<tr>
+<td title='testNG.verifyNewLaunchSectionWithLaptop.verifyAddBothTocartFuctionality()'><b>verifyAddBothTocartFuctionality</b><br>Test class: testNG.verifyNewLaunchSectionWithLaptop</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace401520155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace401520155'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyNewLaunchSectionWithLaptop@229f66ed</td></tr>
+<tr>
+<td title='testNG.verifyAddToCartOptionOnApplication.buyNowFunctionality()'><b>buyNowFunctionality</b><br>Test class: testNG.verifyAddToCartOptionOnApplication</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2046418307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2046418307'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyAddToCartOptionOnApplication@7dcf94f8</td></tr>
+<tr>
+<td title='testNG.verifyPrimeVideoTrailerPlayFuctionality.verifyCategorySectionInPrimeVideo()'><b>verifyCategorySectionInPrimeVideo</b><br>Test class: testNG.verifyPrimeVideoTrailerPlayFuctionality</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1567497616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1567497616'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 121
+Current browser version is 126.0.2592.68 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BHR3PSD&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7D72CB892+60738]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7257B32+233090]
+	(No symbol) [0x00007FF7D706AE0B]
+	(No symbol) [0x00007FF7D70A97FC]
+	(No symbol) [0x00007FF7D70A8AFB]
+	(No symbol) [0x00007FF7D70A1B58]
+	(No symbol) [0x00007FF7D709DB18]
+	(No symbol) [0x00007FF7D70E7389]
+	(No symbol) [0x00007FF7D70DC233]
+	(No symbol) [0x00007FF7D70AD568]
+	(No symbol) [0x00007FF7D70AC394]
+	(No symbol) [0x00007FF7D70AD101]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7487D2C+1072924]
+	(No symbol) [0x00007FF7D7130F45]
+	(No symbol) [0x00007FF7D71C8F6C]
+	(No symbol) [0x00007FF7D71C0A5D]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7D7486773+1067363]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7261A88+273880]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C794+252644]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D725C8C2+252946]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7D7252EC1+213521]
+	BaseThreadInitThunk [0x00007FF80883257D+29]
+	RtlUserThreadStart [0x00007FF80A26AF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at browserSelect.Base.openEdgeBrowser(Base.java:27)
+	at testNG.verifyAddToCartOptionOnApplication.openBrowser(verifyAddToCartOptionOnApplication.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:650)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>testNG.verifyPrimeVideoTrailerPlayFuctionality@662ac478</td></tr>
 </table><p>
 </body>
 </html>

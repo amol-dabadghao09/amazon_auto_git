@@ -4,6 +4,60 @@
   <listeners>
     <listener class-name="extentsReport.ExtentTestNGIReporterListener"/>
   </listeners>
+  <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testNG.verifyAddToCartOptionOnApplication">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="addToCartFuctionality"/>
+          <include name="logOutApplication"/>
+          <include name="buyNowFunctionality"/>
+          <include name="createPOMObjects"/>
+          <include name="openApplication"/>
+          <include name="clearObjects"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testNG.verifyAddToCartOptionOnApplication -->
+      <class name="testNG.verifyCustomerServiceSection">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyLaguageSelectionMarathi"/>
+          <include name="verifyMsgOnCustomerServicePage"/>
+          <include name="openBrowser"/>
+          <include name="verifyFindMoreSolutionAndAskQuationfunction"/>
+          <include name="createPOMObjects"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="clearObjects"/>
+        </methods>
+      </class> <!-- testNG.verifyCustomerServiceSection -->
+      <class name="testNG.verifyPrimeVideoTrailerPlayFuctionality">
+        <methods>
+          <include name="primeVideosectionFuctionality"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="clearObjects"/>
+          <include name="verifyCategorySectionInPrimeVideo"/>
+        </methods>
+      </class> <!-- testNG.verifyPrimeVideoTrailerPlayFuctionality -->
+      <class name="testNG.verifyNewLaunchSectionWithLaptop">
+        <methods>
+          <include name="openApplication"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="verifyAddBothTocartFuctionality"/>
+          <include name="verifyGotoCartbuttonOnRightSideSection"/>
+          <include name="clearObjects"/>
+          <include name="logOutApplication"/>
+        </methods>
+      </class> <!-- testNG.verifyNewLaunchSectionWithLaptop -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
   <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
@@ -12,12 +66,26 @@
           <include name="logOutApplication"/>
           <include name="closeBrowser"/>
           <include name="addToCartFuctionality"/>
+          <include name="buyNowFunctionality"/>
           <include name="createPOMObjects"/>
           <include name="openApplication"/>
           <include name="openBrowser"/>
           <include name="clearObjects"/>
         </methods>
       </class> <!-- testNG.verifyAddToCartOptionOnApplication -->
+      <class name="testNG.verifyCustomerServiceSection">
+        <methods>
+          <include name="verifyLaguageSelectionMarathi"/>
+          <include name="closeBrowser"/>
+          <include name="verifyMsgOnCustomerServicePage"/>
+          <include name="openBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="verifyFindMoreSolutionAndAskQuationfunction"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+          <include name="clearObjects"/>
+        </methods>
+      </class> <!-- testNG.verifyCustomerServiceSection -->
       <class name="testNG.verifyPrimeVideoTrailerPlayFuctionality">
         <methods>
           <include name="primeVideosectionFuctionality"/>
@@ -27,26 +95,23 @@
           <include name="closeApplication"/>
           <include name="clearObjects"/>
           <include name="openApplication"/>
+          <include name="verifyCategorySectionInPrimeVideo"/>
         </methods>
       </class> <!-- testNG.verifyPrimeVideoTrailerPlayFuctionality -->
+      <class name="testNG.verifyNewLaunchSectionWithLaptop">
+        <methods>
+          <include name="openApplication"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="verifyGotoCartbuttonOnRightSideSection"/>
+          <include name="createPOMObjects"/>
+          <include name="verifyAddBothTocartFuctionality"/>
+          <include name="clearObjects"/>
+          <include name="logOutApplication"/>
+        </methods>
+      </class> <!-- testNG.verifyNewLaunchSectionWithLaptop -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-  <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
-    <parameter name="browser" value="Edge"/>
-    <classes>
-      <class name="testNG.verifyAddToCartOptionOnApplication">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="addToCartFuctionality"/>
-          <include name="logOutApplication"/>
-          <include name="createPOMObjects"/>
-          <include name="openApplication"/>
-          <include name="clearObjects"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testNG.verifyAddToCartOptionOnApplication -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
   <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
@@ -66,8 +131,10 @@
         <methods>
           <include name="verifyLaguageSelectionMarathi"/>
           <include name="closeBrowser"/>
+          <include name="verifyMsgOnCustomerServicePage"/>
           <include name="openBrowser"/>
           <include name="createPOMObjects"/>
+          <include name="verifyFindMoreSolutionAndAskQuationfunction"/>
           <include name="closeApplication"/>
           <include name="openApplication"/>
           <include name="clearObjects"/>

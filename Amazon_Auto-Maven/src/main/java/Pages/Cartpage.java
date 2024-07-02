@@ -12,11 +12,13 @@ public class Cartpage {
 	
 	@FindBy (xpath = "//input[@name='proceedToRetailCheckout']")
 	private WebElement proccedToBuy ;
+		
 	
 	public Cartpage(WebDriver driver) {
 		
 		PageFactory.initElements(driver, this);
 	}
+	
 	
 	public void getCartValue() {
 		
